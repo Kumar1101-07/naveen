@@ -7,27 +7,71 @@
 </head>
 <body>
     <style>
-        h1{
-            color: red;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            
+            
         }
 
-        @media screen and (max-width: 700px) {
-            h1{
-                color: blue;
+
+        .one{
+            background-color: rgb(243, 18, 18);
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        @media screen and (max-width:600px) {
+            .one{
+                float: none;
             }
             
         }
 
-        @media screen and (max-width: 400px) {
-            h1{
-                color:green;
+        .two{
+            background-color: rgb(20, 227, 9);
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        @media screen and (max-width:600px) {
+            .two{
+                float: none;
             }
             
         }
 
-        @media screen and (max-width: 200px) {
-            h1{
-                color:rgb(230, 26, 179);
+        .three{
+            background-color: rgb(79, 7, 222);
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        @media screen and (max-width:600px) {
+            .three{
+                float: none;
+            }
+            
+        }
+
+
+        .five{
+            background-color: rgb(132, 205, 131);
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+        @media screen and (max-width:600px) {
+            .five{
+                float: none;
             }
             
         }
@@ -35,11 +79,14 @@
 
 
     </style>
-   
-    <h1>
-        one is the most value
-    </h1>
-   
+
+      <div>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="five"></div>
+
+      </div>
     
 </body>
 </html>
